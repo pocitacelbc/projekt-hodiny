@@ -236,6 +236,35 @@ h1 {
     }
 }
 
+/* Realme 8 5G a podobné velké telefony - 360px až 480px */
+@media (min-width: 360px) and (max-width: 480px) {
+    .controls {
+        bottom: 25px;
+    }
+    
+    #time {
+        font-size: 18vw;
+        letter-spacing: 1.6vw;
+        height: auto;
+        line-height: 1;
+    }
+    
+    #date {
+        font-size: 7vw;
+        letter-spacing: 0.6vw;
+        margin-top: 25px;
+    }
+    
+    #themeBtn {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+    
+    .clock {
+        padding: 15px 25px;
+    }
+}
+
 /* Velmi malé obrazovky (malé telefony) - do 480px */
 @media (max-width: 480px) {
     .controls {
@@ -308,6 +337,34 @@ h1 {
     }
 }
 
+/* Realme 8 5G na výšku - optimalizace pro velký displej */
+@media (min-width: 360px) and (max-width: 480px) and (orientation: portrait) {
+    .clock {
+        padding: 20px 30px;
+    }
+    
+    #time {
+        font-size: 19vw;
+        letter-spacing: 1.5vw;
+        line-height: 0.95;
+    }
+    
+    #date {
+        font-size: 7.5vw;
+        letter-spacing: 0.5vw;
+        margin-top: 30px;
+    }
+    
+    .controls {
+        bottom: 40px;
+    }
+    
+    #themeBtn {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+}
+
 /* iPhone 5 na výšku - speciální optimalizace */
 @media (max-width: 320px) and (orientation: portrait) {
     .clock {
@@ -351,6 +408,34 @@ h1 {
         font-size: 6vh;
         letter-spacing: 0.5vh;
         margin-top: 15px;
+    }
+}
+
+/* Realme 8 5G na šířku - optimalizace pro široký displej */
+@media (min-width: 640px) and (max-height: 480px) and (orientation: landscape) {
+    .controls {
+        bottom: 20px;
+    }
+    
+    #time {
+        font-size: 12vh;
+        letter-spacing: 0.8vh;
+        line-height: 0.9;
+    }
+    
+    #date {
+        font-size: 5vh;
+        letter-spacing: 0.3vh;
+        margin-top: 12px;
+    }
+    
+    #themeBtn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+    .clock {
+        padding: 10px 25px;
     }
 }
 
