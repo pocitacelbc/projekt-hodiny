@@ -177,16 +177,94 @@ h1 {
 /* Velké obrazovky (desktop) - nad 1200px */
 @media (min-width: 1200px) {
     #time {
-        font-size: min(22vw, 350px);
-        letter-spacing: min(3vw, 45px);
+        font-size: min(15vw, 280px);
+        letter-spacing: min(1.5vw, 30px);
         height: auto;
         line-height: 1.2;
     }
     
     #date {
-        font-size: min(8vw, 120px);
-        letter-spacing: min(1vw, 15px);
+        font-size: min(5vw, 90px);
+        letter-spacing: min(0.5vw, 12px);
+        margin-top: 50px;
+    }
+    
+    #themeBtn {
+        padding: 18px 40px;
+        font-size: 18px;
+    }
+    
+    .controls {
+        bottom: 60px;
+    }
+}
+
+/* Extra velké monitory - nad 1600px */
+@media (min-width: 1600px) {
+    #time {
+        font-size: min(12vw, 320px);
+        letter-spacing: min(1.2vw, 35px);
+    }
+    
+    #date {
+        font-size: min(4vw, 100px);
+        letter-spacing: min(0.4vw, 15px);
         margin-top: 60px;
+    }
+    
+    #themeBtn {
+        padding: 20px 45px;
+        font-size: 20px;
+    }
+    
+    .controls {
+        bottom: 80px;
+    }
+}
+
+/* Ultra široké monitory - nad 2000px */
+@media (min-width: 2000px) {
+    #time {
+        font-size: min(10vw, 350px);
+        letter-spacing: min(1vw, 40px);
+    }
+    
+    #date {
+        font-size: min(3.5vw, 110px);
+        letter-spacing: min(0.35vw, 18px);
+        margin-top: 70px;
+    }
+    
+    #themeBtn {
+        padding: 22px 50px;
+        font-size: 22px;
+    }
+    
+    .controls {
+        bottom: 100px;
+    }
+}
+
+/* 4K monitory - nad 2560px */
+@media (min-width: 2560px) {
+    #time {
+        font-size: min(8vw, 380px);
+        letter-spacing: min(0.8vw, 45px);
+    }
+    
+    #date {
+        font-size: min(3vw, 120px);
+        letter-spacing: min(0.3vw, 20px);
+        margin-top: 80px;
+    }
+    
+    #themeBtn {
+        padding: 25px 55px;
+        font-size: 24px;
+    }
+    
+    .controls {
+        bottom: 120px;
     }
 }
 
