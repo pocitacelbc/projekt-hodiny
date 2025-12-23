@@ -218,15 +218,15 @@ h1 {
     }
     
     #time {
-        font-size: 15vw;
-        letter-spacing: 1.5vw;
+        font-size: 20vw;
+        letter-spacing: 2vw;
         height: auto;
         line-height: 1.1;
     }
     
     #date {
-        font-size: 6vw;
-        letter-spacing: 0.6vw;
+        font-size: 8vw;
+        letter-spacing: 0.8vw;
         margin-top: 30px;
     }
     
@@ -243,15 +243,15 @@ h1 {
     }
     
     #time {
-        font-size: 12vw;
-        letter-spacing: 1vw;
+        font-size: 18vw;
+        letter-spacing: 1.8vw;
         height: auto;
         line-height: 1;
     }
     
     #date {
-        font-size: 5vw;
-        letter-spacing: 0.4vw;
+        font-size: 7vw;
+        letter-spacing: 0.6vw;
         margin-top: 20px;
     }
     
@@ -268,12 +268,12 @@ h1 {
     }
     
     #time {
-        font-size: 14vw;
-        letter-spacing: 1.2vw;
+        font-size: 22vw;
+        letter-spacing: 2vw;
     }
     
     #date {
-        font-size: 5.5vw;
+        font-size: 8vw;
         margin-top: 25px;
     }
 }
@@ -285,13 +285,13 @@ h1 {
     }
     
     #time {
-        font-size: 10vh;
-        letter-spacing: 0.8vh;
+        font-size: 15vh;
+        letter-spacing: 1.2vh;
     }
     
     #date {
-        font-size: 4vh;
-        letter-spacing: 0.3vh;
+        font-size: 6vh;
+        letter-spacing: 0.5vh;
         margin-top: 15px;
     }
 }
