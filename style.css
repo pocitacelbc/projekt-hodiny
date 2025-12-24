@@ -109,25 +109,47 @@ h1 {
     text-shadow: inherit;
 }
 
+#dayOfWeek {
+    font-size: min(4vw, 60px);
+    color: inherit;
+    font-family: 'Orbitron', 'Share Tech Mono', monospace;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: min(2vw, 30px);
+    letter-spacing: min(0.5vw, 8px);
+    text-shadow: inherit;
+    text-transform: capitalize;
+}
+
 /* Téma 1 - Zelená (výchozí) */
 /*.theme-green body {
     background: #000000;
 }*/
 .theme-green #time {
-    color: #0f9f14b8;
+    color: #0a980ab8;
+    text-shadow: 
+        0 0 calc(2vw * var(--brightness, 1)) #584097be,
+        0 0 calc(4vw * var(--brightness, 2)) #9e0000ac,
+        0 0 calc(8vw * var(--brightness, 3)) #1939ba6b,
+        0 0 calc(16vw * var(--brightness, 4)) #3c3874b4;
+}
+.theme-green #date {
+    color: #0a980ab8;
     text-shadow: 
         0 0 calc(2vw * var(--brightness, 1)) #584097be,
         0 0 calc(4vw * var(--brightness, 2)) #9e1717ac,
         0 0 calc(8vw * var(--brightness, 3)) #1939ba6b,
         0 0 calc(16vw * var(--brightness, 4)) #76140bb4;
 }
-.theme-green #date {
-    color: #0f9f14b8;
+
+.theme-green #dayOfWeek {
+    color: #0a980ab8;
     text-shadow: 
-        0 0 calc(2vw * var(--brightness, 1)) #584097be,
-        0 0 calc(4vw * var(--brightness, 2)) #9e1717ac,
-        0 0 calc(8vw * var(--brightness, 3)) #1939ba6b,
-        0 0 calc(16vw * var(--brightness, 4)) #76140bb4;
+        0 0 calc(1vw * var(--brightness, 1)) #584097be,
+        0 0 calc(2vw * var(--brightness, 2)) #9e1717ac,
+        0 0 calc(4vw * var(--brightness, 3)) #1939ba6b,
+        0 0 calc(8vw * var(--brightness, 4)) #76140bb4;
 }
 
 /* Téma 2 - Modrá */
@@ -151,6 +173,15 @@ h1 {
         0 0 calc(16vw * var(--brightness, 4)) #331a6e;
 }
 
+.theme-blue #dayOfWeek {
+    color: #00ffff58;
+    text-shadow: 
+        0 0 calc(1vw * var(--brightness, 1)) #7e71a8,
+        0 0 calc(2vw * var(--brightness, 2)) #16808036,
+        0 0 calc(4vw * var(--brightness, 3)) #290424,
+        0 0 calc(8vw * var(--brightness, 4)) #331a6e;
+}
+
 /* Téma 3 - Žlutá */
 /*.theme-yellow body {
     background: #910c0c;
@@ -160,7 +191,7 @@ h1 {
     text-shadow: 
         0 0 calc(2vw * var(--brightness, 1)) #99350a8c,
         0 0 calc(4vw * var(--brightness, 2)) #023024,
-        0 0 calc(8vw * var(--brightness, 3)) #0d7208,
+        0 0 calc(8vw * var(--brightness, 3)) #5341ba,
         0 0 calc(16vw * var(--brightness, 4)) #c06011;
 }
 .theme-yellow #date {
@@ -168,8 +199,17 @@ h1 {
     text-shadow: 
         0 0 calc(2vw * var(--brightness, 1)) #99350a8c,
         0 0 calc(4vw * var(--brightness, 2)) #023024,
-        0 0 calc(8vw * var(--brightness, 3)) #0d7208,
+        0 0 calc(8vw * var(--brightness, 3)) #2a7208,
         0 0 calc(16vw * var(--brightness, 4)) #c06011;
+}
+
+.theme-yellow #dayOfWeek {
+    color: #dbdb1c84;
+    text-shadow: 
+        0 0 calc(1vw * var(--brightness, 1)) #99350a8c,
+        0 0 calc(2vw * var(--brightness, 2)) #023024,
+        0 0 calc(4vw * var(--brightness, 3)) #2a7208,
+        0 0 calc(8vw * var(--brightness, 4)) #c06011;
 }
 
 /* Responzivní design pro různé velikosti obrazovek */
@@ -187,6 +227,12 @@ h1 {
         font-size: min(5vw, 90px);
         letter-spacing: min(0.5vw, 12px);
         margin-top: 50px;
+    }
+    
+    #dayOfWeek {
+        font-size: min(3vw, 54px);
+        letter-spacing: min(0.4vw, 9px);
+        margin-top: 25px;
     }
     
     #themeBtn {
@@ -210,6 +256,12 @@ h1 {
         font-size: min(4vw, 100px);
         letter-spacing: min(0.4vw, 15px);
         margin-top: 60px;
+    }
+    
+    #dayOfWeek {
+        font-size: min(2.5vw, 62px);
+        letter-spacing: min(0.3vw, 11px);
+        margin-top: 30px;
     }
     
     #themeBtn {
@@ -271,10 +323,10 @@ h1 {
 /* Střední obrazovky (tablety na šířku) - 768px až 1199px */
 @media (min-width: 768px) and (max-width: 1199px) {
     #time {
-        font-size: 18vw;
-        letter-spacing: 2vw;
+        font-size: 25vw;
+        letter-spacing: 10vw;
         height: auto;
-        line-height: 1.2;
+        line-height: 1.5;
     }
     
     #date {
@@ -284,8 +336,8 @@ h1 {
     }
     
     #themeBtn {
-        padding: 15px 35px;
-        font-size: 18px;
+        padding: 20px 40px;
+        font-size: 20px;
     }
 }
 
@@ -387,6 +439,12 @@ h1 {
         margin-top: 15px;
     }
     
+    #dayOfWeek {
+        font-size: 6vw;
+        letter-spacing: 0.4vw;
+        margin-top: 10px;
+    }
+    
     #themeBtn {
         padding: 8px 16px;
         font-size: 10px;
@@ -431,6 +489,12 @@ h1 {
         font-size: 7.5vw;
         letter-spacing: 0.5vw;
         margin-top: 30px;
+    }
+    
+    #dayOfWeek {
+        font-size: 4.8vw;
+        letter-spacing: 0.4vw;
+        margin-top: 18px;
     }
     
     .controls {
