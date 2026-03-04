@@ -9,82 +9,13 @@ body {
     background: #000000;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-/* Horní lišta s logem */
-.top-bar {
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(20,20,20,0.8) 100%);
-    border-bottom: 2px solid rgba(255,255,255,0.1);
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-}
-
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.header-logo {
-    max-height: 50px;
-    width: auto;
-    opacity: 0.9;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
-}
-
-.header-logo:hover {
-    opacity: 1;
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 15px rgba(255,255,255,0.4));
-}
-
-/* Textové logo v hlavičce */
-.header-text-logo {
-    color: #DC143C;
-    font-family: 'Orbitron', monospace;
-    font-size: 28px;
-    font-weight: bold;
-    text-shadow: 
-        0 0 10px rgba(220, 20, 60, 0.6),
-        0 0 20px rgba(220, 20, 60, 0.4),
-        0 0 30px rgba(220, 20, 60, 0.2);
-    transition: all 0.3s ease;
-}
-
-.header-text-logo:hover {
-    text-shadow: 
-        0 0 15px rgba(220, 20, 60, 0.8),
-        0 0 25px rgba(220, 20, 60, 0.6),
-        0 0 35px rgba(220, 20, 60, 0.4);
-}
-
-/* Úprava kontejneru pro hlavní obsah */
-.container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 80px; /* Prostor pro horní lištu */
-}
-
-.clock {
-    background: #000000;
-    padding: 20px 40px;
-    border: none;
-}
 /*
 .container {
     text-align: center;
@@ -141,6 +72,12 @@ body {
 
 h1 {
     display: none;
+}
+
+.clock {
+    background: #000000;
+    padding: 20px 40px;
+    border: none;
 }
 
 #time {
