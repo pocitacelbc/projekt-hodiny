@@ -15,6 +15,34 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
+/* Logo styly */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo {
+    max-height: 60px;
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+/* Textové logo alternativa */
+.text-logo {
+    color: #DC143C;
+    font-family: 'Orbitron', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
+}
 /*
 .container {
     text-align: center;
@@ -187,7 +215,7 @@ h1 {
     background: #910c0c;
 }*/
 .theme-yellow #time {
-    color: #dbdb1c84;
+    color: #0fbd3284;
     text-shadow: 
         0 0 calc(2vw * var(--brightness, 1)) #99350a8c,
         0 0 calc(4vw * var(--brightness, 2)) #023024,
@@ -195,7 +223,7 @@ h1 {
         0 0 calc(16vw * var(--brightness, 4)) #c06011;
 }
 .theme-yellow #date {
-    color: #dbdb1c84;
+    color: #098d8d84;
     text-shadow: 
         0 0 calc(2vw * var(--brightness, 1)) #99350a8c,
         0 0 calc(4vw * var(--brightness, 2)) #023024,
@@ -204,13 +232,14 @@ h1 {
 }
 
 .theme-yellow #dayOfWeek {
-    color: #dbdb1c84;
+    color: #a97f8484;
     text-shadow: 
         0 0 calc(1vw * var(--brightness, 1)) #99350a8c,
         0 0 calc(2vw * var(--brightness, 2)) #023024,
         0 0 calc(4vw * var(--brightness, 3)) #2a7208,
         0 0 calc(8vw * var(--brightness, 4)) #c06011;
 }
+
 
 /* Responzivní design pro různé velikosti obrazovek */
 
